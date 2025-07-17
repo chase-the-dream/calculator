@@ -11,39 +11,40 @@
 </head>
 <body>
     <div class="header">
-        <p>
+        <p class="link github">
             Project Github
         </p>
-        <h1>
+        <h1 class="title">
             Calculator
         </h1>
-        <p>
+        <p class="link name">
             Chase Freckmann
         </p>
     </div>
-
+    <p class="equation"></p>
     <div class="calc-wrapper">
         <div class="calc-text">
-            XXXXXXXXXXXXXX
+            EMPTY
         </div>
         <div class="calc-buttons">
-            <button class="calc-button">+</button>
-            <button class="calc-button">-</button>
-            <button class="calc-button">/</button>
-            <button class="calc-button">x</button>
-            <button class="calc-button">1</button>
-            <button class="calc-button">2</button>
-            <button class="calc-button">3</button>
-            <button class="calc-button">4</button>
-            <button class="calc-button">5</button>
-            <button class="calc-button">6</button>
-            <button class="calc-button">7</button>
-            <button class="calc-button">8</button>
-            <button class="calc-button">9</button>
-            <button class="calc-button">0</button>
-            <button class="calc-button">C</button>
+            <button class="calc-button operator" data-op="+">+</button>
+            <button class="calc-button operator" data-op="-">-</button>
+            <button class="calc-button operator" data-op="/">/</button>
+            <button class="calc-button operator" data-op="*">*</button>
+            <button class="calc-button number" data-number="1">1</button>
+            <button class="calc-button number" data-number="2">2</button>
+            <button class="calc-button number" data-number="3">3</button>
+            <button class="calc-button number" data-number="4">4</button>
+            <button class="calc-button number" data-number="5">5</button>
+            <button class="calc-button number" data-number="6">6</button>
+            <button class="calc-button number" data-number="7">7</button>
+            <button class="calc-button number" data-number="8">8</button>
+            <button class="calc-button number" data-number="9">9</button>
+            <button class="calc-button number" data-number="0">0</button>
+            <button class="calc-button clear">C</button>
             <button class="calc-button equal">=</button>
         </div>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
