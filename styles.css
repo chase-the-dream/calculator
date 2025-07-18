@@ -28,6 +28,16 @@
 
 .link {
     background-color: var(--c-darkest);
+    color: var(--c-white);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: var(--c-red);
 }
 
 .calc-wrapper {
