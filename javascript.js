@@ -18,6 +18,8 @@ operators.forEach(function(op){
     op.addEventListener("click", operatorClick);
 });
 
+equal.addEventListener("click", calculateResult);
+
 clear.addEventListener("click", clearCalc);
 
 // Functions
@@ -67,3 +69,39 @@ function clearCalc(event)
     operatorString = "";
     updateEquation();
 }
+
+// Equals Function
+
+function calculateResult() {
+    if(calculatorString2 != "" && calculatorString1 != "" && operatorString != "")
+    {
+        if(operatorString == "+")
+        {
+            let result = parseInt(calculatorString1) + parseInt(calculatorString2);
+            calculatorString1 = result; calculatorString2 = ""; operatorString = "";
+            updateCalcText(result);
+            updateEquation();
+        }
+        else if(operatorString == "-")
+        {
+            let result = parseInt(calculatorString1) - parseInt(calculatorString2);
+            calculatorString1 = result; calculatorString2 = ""; operatorString = "";
+            updateCalcText(result);
+            updateEquation();
+        }
+        else if(operatorString == "*")
+        {
+            let result = parseInt(calculatorString1) * parseInt(calculatorString2);
+            calculatorString1 = result; calculatorString2 = ""; operatorString = "";
+            updateCalcText(result);
+            updateEquation();
+        }
+        else if(operatorString == "/")
+        {
+            let result = parseInt(calculatorString1) / parseInt(calculatorString2);
+            calculatorString1 = result; calculatorString2 = ""; operatorString = "";
+            updateCalcText(result);
+            updateEquation();
+        }
+    }
+};

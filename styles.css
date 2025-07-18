@@ -66,8 +66,15 @@
     border-radius: 12px;
     align-self: stretch;
     text-align: center;
-    font-size: 8vw;
+    font-size: clamp(1rem, 8vw, 4rem);
     color: var(--c-white);
+    overflow: hidden;
+    word-break: break-all;
+    padding: 0.5rem;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .equal {
